@@ -1,12 +1,16 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: Impact;
+    src: url(/font/impact.woff);
+}
 
 body {
-color: #000;
+color: #333;
 font-size: 1rem;
 line-height: 2em;
 letter-spacing:0.05em;
-font-family: YakuHanJP, 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Impact", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体","メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+font-family: YakuHanJP, 'Noto Sans', 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "Impact", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体","メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 position: relative;
 }
 body.open{
@@ -52,7 +56,8 @@ color: #f00;
 font-weight: bold;
 }
 .mf-frame {
-width: 1000px;
+width: 1040px;
+padding: 0 1.25em;
 margin: 0 auto;
 }
 
@@ -696,7 +701,20 @@ pointer-events: auto;
 }
 
 
-
+/* MF SEC TTL */
+.mf-sec-ttl{
+    font-family: Impact;
+    font-size: 3.125em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    .mf-sec-ttl{
+        font-size: 2em;
+    }
+}
+/* END OF MF SEC TTL */
 
 
 
