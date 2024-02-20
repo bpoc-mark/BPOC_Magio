@@ -159,6 +159,7 @@ color: #3E2B81;
 
 #cfooter{
 background: #F7F7F7;
+display: none;
 }
 #cfooter .mf-inner{
 padding: 60px 0 30px;
@@ -181,7 +182,7 @@ padding: 60px 0 30px;
 
 
 #footer{
-background-color: #3E2B81;
+background-color: #184F9B;
 }
 #footer .mf-inner{
 padding: 0;
@@ -195,8 +196,13 @@ line-height: 1em;
 .copy{
 display: block;
 text-align: center;
-font-size: 0.82em;
+font-size: 0.875em;
 color: #fff;
+}
+@media only screen and (max-width: 1024px) {
+    .copy{
+        font-size: 0.675em;
+    }
 }
 
 /****ページTOP***********************************************/
