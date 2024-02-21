@@ -712,6 +712,7 @@ pointer-events: auto;
 @media screen and (max-width: 1024px) {
     .mf-sec-ttl{
         font-size: 2em;
+        line-height: 1.5em;
     }
 }
 /* END OF MF SEC TTL */
