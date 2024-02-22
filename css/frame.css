@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: Impact;
+  src: url(/font/impact.woff);
+}
+
 body {
   color: #333;
   font-size: 1rem;
@@ -109,8 +114,8 @@ header {
 }
 
 #smenu .mf-inner .button-container.pc {
-    display: flex;
-    gap: 0.625em;
+  display: flex;
+  gap: 0.625em;
 }
 #smenu {
   background-color: transparent;
@@ -180,7 +185,6 @@ header {
   #smenu .button-container.sp #call-button {
     width: 2.5em;
     padding: 0;
-   
   }
   #smenu .button-container.sp #call-button img {
     width: 100%;
@@ -198,7 +202,6 @@ header {
   }
 }
 /*END HEADER*/
-
 
 /***************************************************/
 #pankuzu {
@@ -238,6 +241,7 @@ header {
 
 #cfooter {
   background: #f7f7f7;
+  display: none;
 }
 #cfooter .mf-inner {
   padding: 60px 0 30px;
@@ -258,7 +262,7 @@ header {
 }
 
 #footer {
-  background-color: #3e2b81;
+  background-color: #184f9b;
 }
 #footer .mf-inner {
   padding: 0;
@@ -272,7 +276,7 @@ header {
 .copy {
   display: block;
   text-align: center;
-  font-size: 0.82em;
+  font-size: 0.875em;
   color: #fff;
 }
 
@@ -491,74 +495,6 @@ header {
   .pc {
     display: none !important;
   }
-
-  /***************************************************/
-
-  /* header > .clist {
-    width: 100%;
-    display: block;
-  }
-  header.hide {
-    transform: translate(0, 0);
-  }
-  #header {
-    position: relative;
-    width: 100%;
-  }
-  #header .mf-inner {
-    padding: 4vw 3vw;
-  }
-  #header p {
-    max-width: 245px;
-    width: 38.28vw;
-    font-size: 2em;
-  }
-  #header .smbtn {
-    display: block;
-    max-width: 40px;
-    max-height: 30px;
-    width: 6.25vw;
-    height: 4.69vw;
-    border: #863f8b solid;
-    border-width: 0.67vw 0;
-    position: absolute;
-    top: 4vw;
-    right: 3vw;
-    transition: 0.2s;
-  }
-  #header .smbtn:before {
-    content: "";
-    max-height: 5px;
-    height: 0.67vw;
-    background: #863f8b;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translate(0, -50%);
-  }
-  #header .smbtn:after {
-    content: "";
-    max-height: 5px;
-    height: 0.67vw;
-    background: #863f8b;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translate(0, -50%);
-  }
-
-  body.open #header .smbtn {
-    border: none;
-  }
-  body.open #header .smbtn:before {
-    transform: translate(0, -50%) rotate(45deg);
-  }
-  body.open #header .smbtn:after {
-    transform: translate(0, -50%) rotate(-45deg);
-  } */
-
   /***************************************************/
   #mainvis {
   }
@@ -642,7 +578,7 @@ header {
   }
 
   .copy {
-    margin: 0 0 0 0;
+    font-size: 0.675em;
   }
 
   /****ページTOP***********************************************/
@@ -708,6 +644,21 @@ header {
   }
   .newsWrap li a .newsContent p {
     font-size: 1em;
+  }
+}
+
+/* MF SEC TTL */
+.mf-sec-ttl{
+  font-family: Impact;
+  font-size: 3.125em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .mf-sec-ttl{
+      font-size: 2em;
+      line-height: 1.5em;
   }
 }
 
